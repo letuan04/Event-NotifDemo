@@ -18,15 +18,16 @@
             function onDeviceReady(){
 
 
-                window.plugins.PushbotsPlugin.initialize("5bd0b93c0540a30dac4189c3", {"android":{"sender_id":"514903180560"}});
-
+                window.plugins.PushbotsPlugin.initialize("5bd1bfc00540a31ef23f59b4", {"android":{"sender_id":"679847856733"}});
+                // Only with First time registration
+                window.plugins.PushbotsPlugin.on("registered", function(token){
+                    console.log("Registration Id:" + token);
+                });
 
                 //Get user registrationId/token and userId on PushBots, with evey launch of the app even launching with notification
                 window.plugins.PushbotsPlugin.on("user:ids", function(data){
                     console.log("user:ids" + JSON.stringify(data));
                 });
-                window.plugins.PushbotsPlugin.setAlias("PhoneGapDemo");
-
                 alert("on device ready event");
                 document.addEventListener("online", onOnline, false);
                 document.addEventListener("offline", onOffline, false);
@@ -139,10 +140,10 @@
                 navigator.notification.beep(2);
             }
 
-            function makeNotif(){
-                window.plugins.PushbotsPlugin.tag("tag1");
-                window.plugins.PushbotsPlugin.trackEvent("added_to_cart");
-            }
+//            function makeNotif(){
+//                window.plugins.PushbotsPlugin.tag("tag1");
+//                window.plugins.PushbotsPlugin.trackEvent("added_to_cart");
+//            }
         </script>
 
         <div>
@@ -151,7 +152,7 @@
             <button  style="width: 100%; height: 50px;  margin-top: 10px" onclick="showConfirm()">Show Notification Comfirm</button>
             <button  style="width: 100%; height: 50px;  margin-top: 10px" onclick="showPrompt()">Show Notification Prompt</button>
             <button  style="width: 100%; height: 50px;  margin-top: 10px" onclick="makeBeep()">Make Notification Beep Sound</button>
-            <button  style="width: 100%; height: 50px;  margin-top: 10px" onclick="makeNotif()">Make Notification</button>
+<!--            <button  style="width: 100%; height: 50px;  margin-top: 10px" onclick="makeNotif()">Make Notification</button>-->
         </div>
 
     </body>
