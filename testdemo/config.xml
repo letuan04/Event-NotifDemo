@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.test" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>testdemo</name>
+    <description>
+        A blank PhoneGap app.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <plugin name="cordova-plugin-network-information" />
+    <plugin name="cordova-plugin-dialogs" />
+    <engine name="browser" spec="~5.0.4" />
+    <engine name="android" spec="~7.1.1" />
+    <plugin name="pushbots-cordova-plugin" spec="1.6.0" />
+</widget>

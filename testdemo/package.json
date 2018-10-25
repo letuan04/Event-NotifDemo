@@ -1,0 +1,21 @@
+{
+  "name": "com.test",
+  "version": "1.0.0",
+  "displayName": "testdemo",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-dialogs": {},
+      "pushbots-cordova-plugin": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^7.1.1",
+    "cordova-browser": "^5.0.4",
+    "pushbots-cordova-plugin": "1.6.0"
+  }
+}
