@@ -91,8 +91,6 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-badge/test-badge.gradle"
-apply from: "../cordova-plugin-local-notification/test-localnotification.gradle"
 apply from: "../pushbots-cordova-plugin/test-build-extras.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
@@ -262,7 +260,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    compile "com.android.support:support-v4:26.+"
     compile "com.pushbots:pushbots-lib:3.2.0-c@aar"
     // SUB-PROJECT DEPENDENCIES END
 }

@@ -14,7 +14,7 @@
     <engine name="browser" spec="~5.0.4" />
     <engine name="android" spec="~7.1.1" />
     <plugin name="pushbots-cordova-plugin" spec="1.6.0" />
-     <platform name="android">
+    <platform name="android">
         <preference name="android-minSdkVersion" value="15" />
     </platform>
 </widget>

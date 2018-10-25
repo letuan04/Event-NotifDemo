@@ -10,9 +10,6 @@
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.test"
     },
-    "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.test"
-    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.test"
     },
@@ -20,12 +17,5 @@
       "PACKAGE_NAME": "com.test"
     }
   },
-  "dependent_plugins": {
-    "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.test"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.test"
-    }
-  }
+  "dependent_plugins": {}
 }
